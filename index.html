@@ -25,7 +25,7 @@
   </header>
 
   <div class="search-home">
-    <form action="/search" method="get" class="form-inline">
+    <form id="search-form" action="#" method="get">
 
       <h2>Search For Your Favorite Flicks</h2>
       <div class="input-append">
@@ -38,6 +38,12 @@
 
     </form>
   </div>
+
+  <p class="ajax-loader hidden"><img src="ajax-loader.gif"><span>Loading...</span></p>
+
+  <p class="error hidden">Sorry, there was an error connecting to the OMDB API. Have patience, young one!</p>
+
+  <ol id="search-results"></ol>
 
   <footer>
     Copyright &copy; 2013 Movistar*, enhanced version

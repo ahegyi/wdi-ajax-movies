@@ -31,6 +31,26 @@ a.nodecoration:hover {
   font-size: 30px;
   font-family: Lato;
   width: 50%;
+  min-width: 300px;
+  text-align: center;
+}
+
+#search-results {
+  width: 40%;
+  margin: 30px auto 80px;
+  min-width: 300px;
+  font-size: 22px;
+  list-style-type: none;
+  padding: 0;
+}
+
+#search-results li {
+  margin-bottom: 6px;
+  padding: 4px 8px;
+}
+
+#search-results li:hover {
+  background: rgb(190, 214, 218);
 }
 
 h2.movie-title, h2.search-results-title, h2.related-movies {
@@ -80,6 +100,7 @@ footer {
   position: fixed;
   height: 20px;
 }
+
 header.banner h1 {
   font-weight: 300 !important;
   letter-spacing: -1px !important;
@@ -97,4 +118,22 @@ header.banner a {
   /* position: absolute;
   right: 50px;
   top: 30px; */
+}
+
+.hidden {
+  display: none;
+}
+
+.ajax-loader {
+  margin: 30px auto;
+  width: 150px;
+  text-align: center;
+}
+
+.ajax-loader span {
+  margin-left: 10px;
+}
+
+.ajax-loader img {
+  margin-bottom: -2px;
 }
