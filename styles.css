@@ -51,6 +51,7 @@ a.nodecoration:hover {
 
 #search-results li:hover {
   background: rgb(190, 214, 218);
+  cursor: pointer;
 }
 
 h2.movie-title, h2.search-results-title, h2.related-movies {
@@ -64,6 +65,12 @@ h2.movie-title, h2.search-results-title, h2.related-movies {
 ol.results {
   margin-bottom: 30px;
 }
+
+#movie-detail {
+  width: 40%;
+  margin: 0 auto 80px;
+}
+
 
 .movie-details {
   overflow: hidden;
@@ -83,6 +90,7 @@ ol.results {
 .movie-details dt {
   margin-top: 10px;
 }
+
 
 header.banner, footer {
   background: #0ac5f4;
