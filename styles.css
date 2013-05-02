@@ -1,0 +1,100 @@
+
+body {
+  background: rgb(224, 236, 236);
+  color: #242526;
+  font: 300 100%/1.2 "Lato", sans-serif;
+  margin: 0;
+}
+
+a.nodecoration {
+  color: inherit;
+}
+a.nodecoration:hover {
+  text-decoration: none;
+}
+
+.search-home {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-home h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.input-large {
+  height: 36px;
+  line-height: 36px;
+  font-size: 30px;
+  font-family: Lato;
+  width: 50%;
+}
+
+h2.movie-title, h2.search-results-title, h2.related-movies {
+  font-family: "playfair display";
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 0 2px 1px #ddd;
+  margin: 20px 10px;
+}
+
+ol.results {
+  margin-bottom: 30px;
+}
+
+.movie-details {
+  overflow: hidden;
+}
+
+.movie-details .poster {
+  float: left;
+  margin-bottom: 25px;
+}
+
+.movie-details .information {
+  float: left;
+  width: 300px;
+  margin-left: 10px;
+}
+
+.movie-details dt {
+  margin-top: 10px;
+}
+
+header.banner, footer {
+  background: #0ac5f4;
+  color: #fff;
+  padding: 10px 0;
+  text-transform: uppercase;
+  text-shadow: 0 -1px 1px #999 !important;
+  text-align: center;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 20px;
+}
+header.banner h1 {
+  font-weight: 300 !important;
+  letter-spacing: -1px !important;
+}
+
+header.banner a {
+  float: left;
+  width: auto;
+}
+
+.small-search {
+  width: 200px;
+  float: right;
+  padding: 15px 10px;
+  /* position: absolute;
+  right: 50px;
+  top: 30px; */
+}
