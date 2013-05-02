@@ -46,13 +46,28 @@ function displayMovie() {
         imdbVotes: "9"
       */
 
+      // console.log(result);
+
+
       var movieTitle = $('<h2 class="movie-title">' + result.Title +
                       ' (<i>' + result.Year + '</i>)</h2>');
 
-      console.log(result);
+      var poster = null;
+
+      if (result.Poster !== "N/A") {
+        poster = $('<img class="poster" src="' + result.Poster + '" alt="Movie poster">');
+      }
 
       movieDetailContainer.removeClass("hidden");
+
+      if (poster !== null) {
+        movieDetailContainer.append(poster);
+      }
+
       movieDetailContainer.append(movieTitle);
+
+      movieDetailContainer.append($('<br style="clear: both;">'));
+
 
 //       <h2 class="movie-title"><%= @result["Title"] %> (<%= @result["Year"] %>)</h2>
 

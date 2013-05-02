@@ -71,7 +71,11 @@ ol.results {
   margin: 0 auto 80px;
 }
 
-
+.poster {
+  float: right;
+  margin-left: 15px;
+}
+/*
 .movie-details {
   overflow: hidden;
 }
@@ -90,7 +94,7 @@ ol.results {
 .movie-details dt {
   margin-top: 10px;
 }
-
+*/
 
 header.banner, footer {
   background: #0ac5f4;
