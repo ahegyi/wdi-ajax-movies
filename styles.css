@@ -124,6 +124,15 @@ header.banner a {
   display: none;
 }
 
+.error {
+  width: 40%;
+  margin: 40px auto;
+  color: #c00;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
 .ajax-loader {
   margin: 30px auto;
   width: 150px;

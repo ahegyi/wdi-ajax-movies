@@ -17,14 +17,14 @@ $(document).ready( function () {
       dataType: 'jsonp',
       beforeSend: function () {
         // $('form input, form select').prop("disabled", true);
-        // timer = setTimeout(function () { $('.ajax-loader').slideDown("fast"); }, 700);
         resultsContainer.empty();
+        timer = setTimeout(function () { $('.ajax-loader').slideDown("fast"); }, 500);
       },
       complete: function () {
         // allowSubmit = true;
         // $('form input, form select').prop("disabled", false);
-        // clearTimeout(timer);
-        // $('.ajax-loader').slideUp("fast");
+        clearTimeout(timer);
+        $('.ajax-loader').slideUp("fast");
       },
       success: function (results){
 
@@ -42,11 +42,14 @@ $(document).ready( function () {
         if (!!results.Error && results.Error === "Movie not found!") {
           resultsContainer.append($('<li>Sorry, there are no results.</li>'));
         }
-        else {
+        else if (!!results.Search) {
           var searchResults = results.Search;
           for (var i = 0; i < searchResults.length; i += 1) {
             resultsContainer.append(movieLi(searchResults[i].Title, searchResults[i].Year));
           }
+        }
+        else {
+          throw $.ajax.error;
         }
 
         // var list = $('#todo');
@@ -69,7 +72,7 @@ $(document).ready( function () {
         $('.ajax-loader').slideUp("fast");
 
         $('.error').slideDown();
-        setTimeout(function () { $('.error').slideUp(); }, 2500);
+        setTimeout(function () { $('.error').slideUp(); }, 4000);
       }
     });
   });
